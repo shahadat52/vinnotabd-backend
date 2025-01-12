@@ -13,6 +13,7 @@ export type TOrder = {
     customerName: string;
     quantity: number;
     orderProducts: ObjectId[];
+    image: string;
     orderDate: Date;
     status: 'pending' | 'completed' | 'cancelled';
     totalAmount: number;

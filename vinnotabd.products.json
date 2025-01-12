@@ -1,0 +1,147 @@
+[{
+  "_id": {
+    "$oid": "676fd0de131872623b4539a7"
+  },
+  "name": "হ্যান্ড ব্যাগ",
+  "img": "https://i.ibb.co/w4ZXQ2z/1.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 540,
+  "offerPrice": 490,
+  "size": "লম্বা ১৪\" পাশে ১৪\"",
+  "category": "bag",
+  "subCategory": "প্লাস্টিকের বেতের ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676fd105131872623b4539a9"
+  },
+  "name": "অফিসিয়াল লেদার ব্যাগ",
+  "img": "https://i.ibb.co/5TX2dh8/2.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 2100,
+  "offerPrice": 1990,
+  "size": "দৈর্ঘ্য ১২\" প্রস্থ ১৫\"",
+  "category": "bag",
+  "subCategory": "লেদার ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676fd129131872623b4539ab"
+  },
+  "name": "লেডিস হ্যান্ড ব্যাগ",
+  "img": "https://i.ibb.co/TB4f3B8/4.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 1490,
+  "offerPrice": 1290,
+  "size": "দৈর্ঘ্য ১০\" প্রস্থ ৯\"",
+  "category": "bag",
+  "subCategory": "লেডিস ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676fe06b504a095e78ae0c41"
+  },
+  "name": "পাটের হ্যান্ড ব্যাগ",
+  "img": "https://i.ibb.co/9nTmDzV/3.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 250,
+  "offerPrice": 220,
+  "size": "দৈর্ঘ্য ১৪\" প্রস্থ ১৩\"",
+  "category": "bag",
+  "subCategory": "পাটের ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676fd105631872623b4539a9"
+  },
+  "name": "অফিসিয়াল লেদার ব্যাগ",
+  "img": "https://i.ibb.co/5TX2dh8/2.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 2100,
+  "offerPrice": 1990,
+  "size": "দৈর্ঘ্য ১২\" প্রস্থ ১৫\"",
+  "category": "bag",
+  "subCategory": "লেদার ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676fd129131872423b4539ab"
+  },
+  "name": "লেডিস হ্যান্ড ব্যাগ",
+  "img": "https://i.ibb.co/TB4f3B8/4.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 1490,
+  "offerPrice": 1290,
+  "size": "দৈর্ঘ্য ১০\" প্রস্থ ৯\"",
+  "category": "bag",
+  "subCategory": "লেডিস ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676fe06b504a095f78ae0c41"
+  },
+  "name": "পাটের হ্যান্ড ব্যাগ",
+  "img": "https://i.ibb.co/9nTmDzV/3.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 250,
+  "offerPrice": 220,
+  "size": "দৈর্ঘ্য ১৪\" প্রস্থ ১৩\"",
+  "category": "bag",
+  "subCategory": "পাটের ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677805fbcf0f56d2eaf142b9"
+  },
+  "name": "ঝুড়ি ব্যাগ",
+  "img": "https://i.ibb.co/xsJH8Qn/Juri-bag.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 700,
+  "size": "দৈর্ঘ্য ১৫ প্রস্থ ১৫",
+  "category": "bag",
+  "subCategory": "প্লাস্টিকের বেতের ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6778061dcf0f56d2eaf142bc"
+  },
+  "name": "ঝুড়ি ব্যাগ",
+  "img": "https://i.ibb.co/xsJH8Qn/Juri-bag.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 700,
+  "size": "দৈর্ঘ্য ১৫ প্রস্থ ১৫",
+  "category": "bag",
+  "subCategory": "প্লাস্টিকের বেতের ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6778061fcf0f56d2eaf142be"
+  },
+  "name": "ঝুড়ি ব্যাগ",
+  "img": "https://i.ibb.co/xsJH8Qn/Juri-bag.png",
+  "description": "A comfortable and stylish classic t-shirt made from 100% cotton.",
+  "price": 700,
+  "size": "দৈর্ঘ্য ১৫ প্রস্থ ১৫",
+  "category": "bag",
+  "subCategory": "প্লাস্টিকের বেতের ব্যাগ",
+  "ratings": 4.5,
+  "__v": 0
+}]

@@ -37,6 +37,10 @@ const OrderSchema = new Schema<TOrder>({
         ref: "Product",
         required: [true, 'Product id is required']
     }],
+    image: {
+        type: String,
+        required: [true, 'Selected Product Image is required']
+    },
     quantity: {
         type: Number,
         required: [true, 'Quantity is required']

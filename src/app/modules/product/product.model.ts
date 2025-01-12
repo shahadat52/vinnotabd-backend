@@ -7,10 +7,14 @@ const productSchema = new Schema<TProduct>({
         required: true,
         trim: true,
     },
-    img: {
+    images: {
+        type: [String],
+        required: true,
+    },
+    zoomImg: {
         type: String,
         required: true,
-        trim: true,
+        trim: true
     },
     description: {
         type: String,
@@ -20,6 +24,10 @@ const productSchema = new Schema<TProduct>({
     price: {
         type: Number,
         required: true,
+        min: 0,
+    },
+    offerPrice: {
+        type: Number,
         min: 0,
     },
     size: {
