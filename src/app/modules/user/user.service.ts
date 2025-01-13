@@ -8,9 +8,9 @@ import jwt from 'jsonwebtoken';
 const createUserInDB = async (userData: any) => {
     if (!await UserModel.find({ email: userData.email })) {
         throw new AppError(httpStatus.BAD_REQUEST, 'User already exists');
-    }
-    const result = await UserModel.create(userData);
-    return result
+    };
+    await UserModel.create(userData);
+    return
 };
 
 const getAllUsersFromDb = async (query: Record<string, unknown>) => {
@@ -43,37 +43,28 @@ const getSingleUserById = async (id: string) => {
 };
 
 const loginUser = async (payload: any) => {
-    /*
-      1) check id is available in collection
-      3) check is blocked ?
-      */
     const user = await UserModel.findOne({ email: payload?.email }).select('+password');
     if (!user) {
         throw new AppError(httpStatus.NOT_FOUND, 'User not available');
     }
 
-
-
     const status = user?.status;
     if (status === 'blocked') {
         throw new AppError(httpStatus.FORBIDDEN, 'User is blocked');
     }
-    if (!user?.password === payload.password) {
+    if (user?.password !== payload.password) {
         throw new AppError(httpStatus.FORBIDDEN, 'Incorrect Password');
     }
     // const matchPassword = await bcrypt.compare(payload.password, user.password);
     // console.log(matchPassword);
 
     const jwtPayload = {
-        id: user?._id,
+        email: user?.email,
+        name: user?.name,
+        phone: user?.phone,
         role: user?.role,
     };
-    const accessToken = jwt.sign(
-        {
-            jwtPayload,
-        },
-        config.jwt_secret as string,
-        { expiresIn: '10d' },
+    const accessToken = jwt.sign(jwtPayload, config.jwt_secret as string, { expiresIn: '10d' },
     );
 
     // const refreshToken = createToken(

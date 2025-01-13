@@ -16,12 +16,14 @@ const UserSchema = new Schema<TUser>({
         required: true,
         select: 0,
     },
-    address: {
+    phone: {
         type: String,
-        default: '',
+        required: [true, 'phone is required'],
+        unique: true,
     },
     status: {
         type: String,
+        default: 'in-progress',
         enum: ['in-progress', 'blocked'],
     },
     role: {
