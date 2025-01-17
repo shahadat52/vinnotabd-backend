@@ -26,9 +26,21 @@ const productSchema = new Schema<TProduct>({
         required: true,
         min: 0,
     },
+    quantity: {
+        type: Number,
+        required: [true, 'Quantity is required'],
+        min: 0,
+    },
+    status: {
+        type: String,
+        enum: ['available', 'unavailable'],
+        required: [true, 'Status is required'],
+        default: 'available'
+    },
     offerPrice: {
         type: Number,
         min: 0,
+        default: 0
     },
     size: {
         type: String,
@@ -50,6 +62,7 @@ const productSchema = new Schema<TProduct>({
         required: true,
         min: 0,
         max: 5,
+        default: 4.5
     },
 });
 
