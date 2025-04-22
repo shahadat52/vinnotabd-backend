@@ -4,7 +4,6 @@ import catchAsync from "../../utils/catchAsync";
 import httpStatus from 'http-status';
 
 const placeOrder = catchAsync(async (req, res) => {
-
     const result = await orderServices.placeOrderInDB(req.body);
     sendResponse(res, {
         statusCode: httpStatus.OK,
@@ -26,7 +25,19 @@ const getAllOrders = catchAsync(async (req, res) => {
     });
 });
 
+const getSpecificUserOrders = catchAsync(async (req, res) => {
+    const { id } = req.params;
+    const result = await orderServices.getSpecificUserOrdersFromDB(id);
+    sendResponse(res, {
+        statusCode: httpStatus.OK,
+        success: true,
+        message: 'User orders data retrieved successfully',
+        data: result,
+    });
+});
+
 export const orderControllers = {
     placeOrder,
-    getAllOrders
+    getAllOrders,
+    getSpecificUserOrders
 }

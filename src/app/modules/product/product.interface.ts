@@ -7,7 +7,7 @@ export type TProduct = {
     description: string;
     price: number;
     offerPrice: number;
-    quantity: number;
+    stock: number;
     status: string
     size: string
     ratings: number;

@@ -26,9 +26,9 @@ const productSchema = new Schema<TProduct>({
         required: true,
         min: 0,
     },
-    quantity: {
+    stock: {
         type: Number,
-        required: [true, 'Quantity is required'],
+        required: [true, 'Stock is required'],
         min: 0,
     },
     status: {

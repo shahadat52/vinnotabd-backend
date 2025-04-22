@@ -59,6 +59,7 @@ const loginUser = async (payload: any) => {
     // console.log(matchPassword);
 
     const jwtPayload = {
+        id: user?._id,
         email: user?.email,
         name: user?.name,
         phone: user?.phone,

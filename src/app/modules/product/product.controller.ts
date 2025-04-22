@@ -58,5 +58,5 @@ export const productControllers = {
     createProducts,
     getAllProducts,
     getSingleProduct,
-    deleteSingleProduct
+    deleteSingleProduct,
 }

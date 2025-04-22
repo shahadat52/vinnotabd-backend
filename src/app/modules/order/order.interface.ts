@@ -1,22 +1,33 @@
-import { ObjectId } from "mongoose";
+import { Types } from 'mongoose';
 
-export type TShippingAddress = {
-
-    district: string;
-    subDistrict: string;
-    union: string
-    address: string;
+export interface TOrderItem {
+    productId: Types.ObjectId;
+    name: string;
+    price: number;
+    quantity: number;
+    image: string;
 }
 
-export type TOrder = {
-    orderId: string;
-    customerName: string;
-    quantity: number;
-    orderProducts: ObjectId[];
-    image: string;
-    orderDate: Date;
-    status: 'pending' | 'completed' | 'cancelled';
-    totalAmount: number;
+export interface TGuestInfo {
+    name: string;
+    email: string;
     phone: string;
-    shippingAddress: TShippingAddress
+}
+
+export interface TShippingAddress {
+    name: string;
+    phone: string;
+    addressLine: string;
+}
+
+export interface TOrder {
+    _id?: Types.ObjectId;
+    user?: Types.ObjectId; // Optional for guests
+    guestInfo?: TGuestInfo; // Optional for logged-in users
+    items: TOrderItem[];
+    status: 'pending' | 'confirmed' | 'shipped' | 'delivered' | 'cancelled';
+    shippingAddress: TShippingAddress;
+    totalAmount: number;
+    createdAt?: Date;
+    updatedAt?: Date;
 }

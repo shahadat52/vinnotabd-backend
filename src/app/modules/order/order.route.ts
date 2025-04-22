@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.post(
     '/order-place',
+    // auth(USER_ROLE.admin, USER_ROLE.customer, USER_ROLE.superAdmin),
     orderControllers.placeOrder
 );
 
@@ -14,8 +15,8 @@ router.get(
 );
 
 router.get(
-    '/:orderId',
-    // userControllers.getSingleProduct
+    '/:id',
+    orderControllers.getSpecificUserOrders
 );
 
 export const OrderRoutes = router;

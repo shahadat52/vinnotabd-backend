@@ -31,7 +31,15 @@ const getAllProductsFromDb = async (query: Record<string, unknown>) => {
             $and: [{ 'subCategory': query.subCategory }]
         });
         return filterQuery
-    }
+    };
+
+    if (query?.category) {
+        const filterQuery = await ProductModel.find({
+            $and: [{ 'category': query.category }]
+        });
+        return filterQuery
+    };
+
 
     const result = await ProductModel.find()
     return result
@@ -51,4 +59,4 @@ export const productServices = {
     getAllProductsFromDb,
     getSingleProductById,
     deleteSingleProductById
-}
+};
